@@ -22,10 +22,6 @@ class TUFMaxError(Exception):
     Any critical failure within the library should raise an exception derived 
     from this class. It ensures that TUFMax errors can be distinguished from 
     standard Python errors or third-party library errors.
-    
-    Attributes:
-        message (str): Human-readable error description.
-        details (dict, optional): Additional context information.
     """
     def __init__(self, message: str, details: Optional[dict] = None):
         super().__init__(message)
@@ -150,10 +146,6 @@ class TUFMaxDegradationWarning(Warning):
     Unlike exceptions, this warning does NOT halt execution. It informs the user 
     and the Logger that the results are valid but derived from a simplified model 
     due to the unavailability of higher-fidelity data or tools.
-    
-    Attributes:
-        fallback_model (str): Name of the simplified model being used.
-        original_model (str): Name of the preferred model that failed.
     
     Examples:
         - Switching from NRLMSIS 2.1 to COESA76 due to missing solar indices.

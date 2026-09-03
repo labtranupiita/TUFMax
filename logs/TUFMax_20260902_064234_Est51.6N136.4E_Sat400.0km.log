@@ -1,0 +1,49 @@
+================================================================================
+TUFMax Execution Log | Atmospheric & Plasma Profile Generator
+Start Time: 2026-09-02 06:42:34 UTC
+Ground Station: Lat=51.65, Lon=136.40, Alt=2.25m
+Satellite Pos:  Lat=0.00, Lon=0.00, Alt=400000.0m
+Configuration:  Standard Mode
+================================================================================
+
+[+0.00s] [INFO  ] Starting Module: TUFMax Engine Initialization
+[+0.00s] [INFO  ]   +-- Starting Module: Phase 1: Ingestion & Geometry (Blocks 0-2)
+[+0.04s] [OK    ]   +-- Completed Module: Phase 1: Ingestion & Geometry
+[+0.04s] [INFO  ]   +-- Starting Module: Phase 2: Line-of-Sight Path (Block 3)
+[+0.04s] [OK    ]     +-- Validation Passed: Check
+[+0.04s] [INFO  ]       +-- Details: LOS Validated (El=45.0°)
+[+0.10s] [OK    ]     +-- Validation Passed: Check
+[+0.10s] [INFO  ]       +-- Details: LOS Validated (El=45.0°)
+[+0.15s] [OK    ]   +-- Completed Module: Phase 2: Line-of-Sight Path
+[+0.15s] [INFO  ]   +-- Starting Module: Phase 3: Physics Calculations (Blocks 4-10)
+[+0.15s] [INFO  ]     +-- Starting Module: Block 4: NeutralAtmosphere
+[+0.15s] [INFO  ]       +-- Validation Failed: Check
+[+0.15s] [INFO  ]         +-- Details: Neutral atmosphere validation passed
+[+0.16s] [OK    ]     +-- Completed Module: Block 4: NeutralAtmosphere
+[+0.16s] [INFO  ]     +-- Starting Module: Block 5: IonospherePlasmasphere
+[+0.16s] [INFO  ]       +-- Validation Failed: Check
+[+0.16s] [INFO  ]         +-- Details: Plasma validation passed
+[+0.16s] [OK    ]     +-- Completed Module: Block 5: IonospherePlasmasphere
+[+0.16s] [INFO  ]     +-- Starting Module: Block 6: GeomagneticField
+[+0.16s] [INFO  ]       +-- Validation Failed: Check
+[+0.16s] [INFO  ]         +-- Details: Magnetic field validation passed
+[+0.16s] [OK    ]     +-- Completed Module: Block 6: GeomagneticField
+[+0.16s] [INFO  ]     +-- Starting Module: Block 7: Gyrofrequencies
+[+0.16s] [INFO  ]       +-- Validation Failed: Check
+[+0.16s] [INFO  ]         +-- Details: No data to validate for gyro
+[+0.17s] [OK    ]     +-- Completed Module: Block 7: Gyrofrequencies
+[+0.17s] [INFO  ]     +-- Starting Module: Block 8: CollisionFrequencies
+[+0.17s] [INFO  ]       +-- Validation Failed: Check
+[+0.17s] [INFO  ]         +-- Details: No data to validate for collision
+[+0.17s] [OK    ]     +-- Completed Module: Block 8: CollisionFrequencies
+[+0.17s] [INFO  ]     +-- Starting Module: Block 9: StixParameters
+[+0.17s] [INFO  ]       +-- Validation Failed: Check
+[+0.17s] [INFO  ]         +-- Details: No data to validate for stix
+[+0.17s] [OK    ]     +-- Completed Module: Block 9: StixParameters
+[+0.17s] [INFO  ]     +-- Starting Module: Block 10: ConductivityTensor
+[+0.17s] [INFO  ]       +-- Validation Failed: Check
+[+0.17s] [INFO  ]         +-- Details: No data to validate for conductivity
+[+0.17s] [OK    ]     +-- Completed Module: Block 10: ConductivityTensor
+[+0.18s] [OK    ]   +-- Completed Module: Phase 3: Physics Calculations
+[+0.18s] [INFO  ]   +-- Starting Module: Assembling Final Result
+[+0.18s] [OK    ]   +-- Completed Module: Assembling Final Result

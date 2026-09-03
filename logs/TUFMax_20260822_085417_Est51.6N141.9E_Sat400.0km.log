@@ -1,0 +1,15 @@
+================================================================================
+TUFMax Execution Log | Atmospheric & Plasma Profile Generator
+Start Time: 2026-08-22 08:54:17 UTC
+Ground Station: Lat=51.65, Lon=141.88, Alt=2.25m
+Satellite Pos:  Lat=0.00, Lon=0.00, Alt=400000.0m
+Configuration:  Standard Mode
+================================================================================
+
+[+0.00s] [INFO  ] Starting Module: TUFMax Engine Initialization
+[+0.00s] [INFO  ]   +-- Starting Module: Phase 1: Ingestion & Geometry (Blocks 0-2)
+[+0.03s] [OK    ]   +-- Completed Module: Phase 1: Ingestion & Geometry
+[+0.03s] [INFO  ]   +-- Starting Module: Phase 2: Line-of-Sight Path (Block 3)
+[+0.03s] [CRIT  ]     +-- Line of Sight Blocked. Elevation -64.44° is below minimum threshold 15.0°.
+[+0.03s] [CRIT  ]     +-- Geometry Validation Failed: Line of Sight Blocked. Elevation -64.44° is below minimum threshold 15.0°.
+[+0.03s] [FAIL  ]   +-- Completed Module: Phase 2: Line-of-Sight Path
